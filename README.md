@@ -2,6 +2,10 @@
 
 A comprehensive registration form with real-time validation, responsive design, and user-friendly features.
 
+## Live Demo
+
+Check out the live deployment of this form: [https://registration-form-validation-js.vercel.app/](https://registration-form-validation-js.vercel.app/)
+
 ## Features
 
 ### Form Fields
@@ -117,6 +121,36 @@ The form is fully responsive and adapts to different screen sizes:
 - Semantic HTML structure
 - Keyboard navigable
 - Screen reader friendly
+
+## Installation
+
+To run this project locally:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Bilal0335/registration-form-validation-js.git
+   ```
+
+   Or download the ZIP file directly from the repository.
+
+2. Navigate to the project directory:
+   ```bash
+   cd form_validation
+   ```
+
+3. Open `index.html` in your preferred web browser
+
+Alternatively, you can directly open the `index.html` file in your browser without any server requirements since it's a static HTML application.
+
+## Contribution
+
+Contributions are welcome! Here's how you can contribute:
+
+1. Fork the project
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ## License
 
