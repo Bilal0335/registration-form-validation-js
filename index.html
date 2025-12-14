@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <div id="firstNameError" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <div id="lastNameError" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="surname">Surname/Family Name:</label>
+                <input type="text" id="surname" name="surname" required>
+                <div id="surnameError" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+                <div id="emailError" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <div id="passwordError" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <div id="confirmPasswordError" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+                <div id="genderError" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">-- Select Country --</option>
+                    <option value="pakistan">Pakistan</option>
+                    <option value="india">India</option>
+                    <option value="bangladesh">Bangladesh</option>
+                    <option value="sri-lanka">Sri Lanka</option>
+                    <option value="afghanistan">Afghanistan</option>
+                    <option value="nepal">Nepal</option>
+                    <option value="bhutan">Bhutan</option>
+                    <option value="maldives">Maldives</option>
+                    <option value="usa">United States</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="canada">Canada</option>
+                    <option value="australia">Australia</option>
+                    <option value="germany">Germany</option>
+                    <option value="france">France</option>
+                    <option value="japan">Japan</option>
+                    <option value="china">China</option>
+                    <option value="russia">Russia</option>
+                    <option value="brazil">Brazil</option>
+                    <option value="mexico">Mexico</option>
+                    <option value="south-korea">South Korea</option>
+                    <option value="italy">Italy</option>
+                    <option value="spain">Spain</option>
+                    <option value="netherlands">Netherlands</option>
+                    <option value="sweden">Sweden</option>
+                    <option value="switzerland">Switzerland</option>
+                    <option value="norway">Norway</option>
+                    <option value="uae">United Arab Emirates</option>
+                    <option value="saudi-arabia">Saudi Arabia</option>
+                    <option value="egypt">Egypt</option>
+                    <option value="south-africa">South Africa</option>
+                    <option value="nigeria">Nigeria</option>
+                    <option value="kenya">Kenya</option>
+                    <option value="singapore">Singapore</option>
+                    <option value="malaysia">Malaysia</option>
+                    <option value="thailand">Thailand</option>
+                    <option value="philippines">Philippines</option>
+                    <option value="indonesia">Indonesia</option>
+                    <option value="vietnam">Vietnam</option>
+                    <option value="turkey">Turkey</option>
+                    <option value="israel">Israel</option>
+                    <option value="other">Other</option>
+                </select>
+                <div id="countryError" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox-container">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the Terms and Conditions</label>
+                </div>
+                <div id="termsError" class="error"></div>
+            </div>
+
+            <button type="submit" id="submitBtn" class="submit-btn" disabled>Submit</button>
+        </form>
+
+        <div id="summarySection" class="summary-section" style="display: none;">
+            <h2>Registration Summary</h2>
+            <div id="summaryContent"></div>
+            <button type="button" id="backToFormBtn" class="submit-btn" style="margin-top: 15px; background-color: #2196F3;">Back to Form</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
